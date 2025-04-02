@@ -7,14 +7,14 @@ Easily stub out Meteor collections with in-memory local collections. The idea he
 ## Installation
 
 ```
-meteor add hwillson:stub-collections
+meteor add bluehive:stub-collections
 ```
 
 ### Usage via ES6 import
 
 ```js
 // client or server
-import StubCollections from 'meteor/hwillson:stub-collections';
+import StubCollections from 'meteor/bluehive:stub-collections';
 ```
 
 ## API

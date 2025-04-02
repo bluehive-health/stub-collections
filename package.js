@@ -2,7 +2,7 @@
 /* eslint-disable prefer-arrow-callback */
 
 Package.describe({
-  name: 'meicher:stub-collections',
+  name: 'bluehive:stub-collections',
   version: '1.1.0',
   summary: 'Stub out Meteor collections with in-memory local collections.',
   documentation: 'README.md',
@@ -25,7 +25,7 @@ Package.onUse(function onUse(api) {
 
 Package.onTest(function onTest(api) {
   api.use([
-    'meicher:stub-collections',
+    'bluehive:stub-collections',
     'aldeed:simple-schema@1.13.1',
     'aldeed:collection2@4.1.1',
     'ecmascript',
