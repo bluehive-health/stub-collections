@@ -2,11 +2,11 @@
 /* eslint-disable prefer-arrow-callback */
 
 Package.describe({
-  name: 'hwillson:stub-collections',
-  version: '1.0.9',
+  name: 'meicher:stub-collections',
+  version: '1.1.0',
   summary: 'Stub out Meteor collections with in-memory local collections.',
   documentation: 'README.md',
-  git: 'https://github.com/hwillson/meteor-stub-collections.git',
+  git: 'https://github.com/MartinEicher/meteor-stub-collections.git',
   debugOnly: true,
 });
 
@@ -16,7 +16,6 @@ Npm.depends({
 });
 
 Package.onUse(function onUse(api) {
-  api.versionsFrom('1.3');
   api.use([
     'ecmascript',
     'mongo',
@@ -26,11 +25,11 @@ Package.onUse(function onUse(api) {
 
 Package.onTest(function onTest(api) {
   api.use([
-    'hwillson:stub-collections',
-    'aldeed:simple-schema@1.5.3',
-    'aldeed:collection2@2.10.0',
+    'meicher:stub-collections',
+    'aldeed:simple-schema@1.13.1',
+    'aldeed:collection2@4.1.1',
     'ecmascript',
-    'mongo',
+    'mongo@2.1.1',
     'lmieulet:meteor-coverage@2.0.2', // Needed until https://github.com/meteortesting/meteor-mocha/pull/69 is merged
     'meteortesting:mocha@1.0.0',
   ]);
